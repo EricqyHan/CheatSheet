@@ -96,3 +96,59 @@ let arrTest2 = ["t", "e", "s", "t", "i", "n", "g"];
 console.log(arrTest2.slice(-3));
 // returns ["i", "n", "g"]
 ```
+
+### Concat method createa a new array by merging existing arrays
+
+```js
+let a = [1, 2];
+let b = [3, 4, 5];
+let c = a.concat(b);
+/// returns [1,2,3,4,5]
+
+let arrConcat = [1, 2];
+console.log(arrConcat.concat([3, 4], [5, 6], 7, 8));
+// returns [1, 2,3,4,5,6,7,8]
+
+let arrConcat2 = [1, 2];
+let arrayLike = {
+  0: "something",
+  length: 1,
+};
+
+console.log(arrConcat2.concat(arrayLike));
+// returns [1, 2, {0: 'something', length: 1}]
+```
+
+### forEach() method calls a function and iterates over the array items in ascending order without mutating the array.
+
+```js
+let names = ["Anna", "John", "Peter"];
+
+// using forEach
+names.forEach(function (item, index, arr) {
+  arr[index] = "Hello " + item;
+});
+
+console.log(names);
+// ["Hello Anna", "Hello John", "Hello Peter"]
+
+let lotr = ["Bilbo", "Gandalf", "Nazgul"];
+lotr.forEach((item, index, array) => {
+  console.log(`${item} is at index ${index} in ${array}`);
+});
+//returns
+// Bilbo is at index 0 in Bilbo,Gandalf,Nazgul
+// Gandalf is at index 1 in Bilbo,Gandalf,Nazgul
+// Nazgul is at index 2 in Bilbo,Gandalf,Nazgul
+```
+
+### Searching in Array with indexOf/lastIndexOf
+
+- arr.indexOf(item, from) – looks for item starting from index from, and returns the index where it was found, otherwise -1.
+-
+- arr.includes(item, from) – looks for item starting from index from, returns true if found.
+
+```js
+const names = ["Anna", "Pete", "Jane", "Luna"];
+console.log(names.indexOf("Jane")); // 2
+```
