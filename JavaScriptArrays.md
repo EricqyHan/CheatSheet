@@ -17,7 +17,7 @@ console.log(arr.length); // returns 3
 
 Here are a few others
 
-Array.splice - is a swiss army knife for arrays. It can insert, remove, and replace
+### Array.splice - is a swiss army knife for arrays. It can insert, remove, and replace
 
 ```js
 // Array.splice - is a swiss army knife for arrays. It can insert, remove, and replace
@@ -69,4 +69,30 @@ studyJavaScript5.splice(-3, 0, "JavaScript", "Node", "and");
 // from index -3 ("React"), delete 0 elements, then insert "JavaScript", "Node", "and"
 console.log(studyJavaScript5);
 // returns ["I", "study", "JavaScript", "Node", "and", "React", "right", "now"];
+```
+
+### Slice is a much simpler than similar-looking `js arr.splice`. The slice() method slices out a piece of an array into a new array from start to end (end not included).
+
+The syntax is
+
+```js
+arr.slice([start], [end]);
+
+let array1 = [5, 3, 1, 9, 7, 4, 2, 8, 6];
+let num = array1.slice(1, 4);
+
+// Output: [3, 1, 9]
+
+let arrTest = ["t", "e", "s", "t"];
+let arrTestSlice = arrTest.splice(1, 2);
+console.log(arrTestSlice);
+// returns ["e", "s"]
+
+let arrTestSlice2 = arrTest.slice(-2);
+console.log(arrTestSlice2);
+// returns ["t", "t"]
+
+let arrTest2 = ["t", "e", "s", "t", "i", "n", "g"];
+console.log(arrTest2.slice(-3));
+// returns ["i", "n", "g"]
 ```
