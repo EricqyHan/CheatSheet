@@ -6,9 +6,9 @@ Git is an important tool that allows developers to track and store versions of c
 
 | Command                       |                        Description                         |   Cool |
 | ----------------------------- | :--------------------------------------------------------: | -----: |
-| [`git version`](#git-version) |                     Check Git Version                      | Basics |
-| [`git status`](#git-status)   |      Gives information on the current status of repo       | Basics |
-| [`git init`](#git-init)       | Lets us to turn any existing project into a Git repository | Basics |
+| [`git version`](#Git-Version) |                     Check Git Version                      | Basics |
+| [`git status`](#Git-Status)   |      Gives information on the current status of repo       | Basics |
+| [`git init`](#Git-Init)       | Lets us to turn any existing project into a Git repository | Basics |
 
 ### Git Version
 
