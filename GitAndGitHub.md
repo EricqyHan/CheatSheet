@@ -153,3 +153,12 @@ Sometimes the Master/Main branch is the official branch and working branch. Ever
 ## Rename a branch
 
 `git branch -m <new branch name>` - switch to branch you want to rename and run `git branch -m <new branch name>`
+
+### Accidentally pushed Node_Modules
+
+- First create a .gitignore with `touch .gitignore`
+- add node_modules to the file
+- remove the files from git's index
+  - `git rm -r --cached node_modules`
+  - `git commit -m "Remove and ignore node_modules"`
+  - `git push` to finish it off
