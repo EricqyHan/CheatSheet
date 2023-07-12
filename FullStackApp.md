@@ -10,6 +10,17 @@ npm install express --save
 npm install mongodb --save
 npm install ejs --save
 npm install dotenv --save
+npm install --save-dev nodemon
+```
+
+```
+{
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+}
 ```
 
 ## Connect to DB
